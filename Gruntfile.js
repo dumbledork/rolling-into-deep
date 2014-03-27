@@ -90,7 +90,8 @@ module.exports = function(grunt) {
           sourceMap: false
         },
         files: {
-          'assets/css/<%= pkg.name %>.css' : '_source/less/bootstrap.less'
+          'assets/css/<%= pkg.name %>.css' : '_source/less/bootstrap.less',
+          'assets/css/font-awesome.css': '_source/less/font-awesome/font-awesome.less'
         }
       },
       production: {

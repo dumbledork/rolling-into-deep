@@ -10,15 +10,15 @@
 @offcanvas-ease-method:     ease;
 @offcanvas-menu-transition: 340ms;
 
-// z-index 
+// z-index
 @offcanvas-menu-zindex: 100;
 
 // OffCanvas Components
 // Firefox Bug: https://bugzilla.mozilla.org/show_bug.cgi?id=625289
 // It cancels child transitions
-[data-offcanvas="true"].active { 
+[data-offcanvas="true"].active {
   .transition(overflow @offcanvas-menu-transition @offcanvas-ease-method);
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 [data-offcanvas="true"],
@@ -35,14 +35,14 @@
   width: @offcanvas-menu-width;
   height: 100%;
   background-color: @offcanvas-menu-bgcolor;
-  
+
   &.active {
-    .transition(left @offcanvas-menu-transition @offcanvas-ease-method); 
+    .transition(left @offcanvas-menu-transition @offcanvas-ease-method);
     left: 0;
   }
 
   &.active.offset {
-    .transition(left @offcanvas-menu-transition @offcanvas-ease-method); 
+    .transition(left @offcanvas-menu-transition @offcanvas-ease-method);
     left: -@offcanvas-menu-width;
   }
 
@@ -58,7 +58,7 @@
   .nav-pills > li > a {
     .transition(color @offcanvas-menu-transition @offcanvas-ease-method);
     color: @gray-light;
-    
+
     &:hover {
       .transition(color @offcanvas-menu-transition @offcanvas-ease-method);
       color: @gray-lighter;
@@ -117,7 +117,7 @@
   z-index: (@offcanvas-menu-zindex + 200);
   margin-top: 10px;
   margin-bottom: 10px;
-  
+
   &.active {
     .transition(left 200ms ease);
     left: (@offcanvas-menu-width + 20);
@@ -136,7 +136,7 @@ a[data-toggle="submenuback"] {
   clear: both;
   padding: 10px 15px;
   text-decoration: none;
-  
+
   &:hover {
     .transition(color 200ms ease);
     text-decoration: none;
@@ -161,14 +161,14 @@ a[data-toggle="submenuback"] {
   // z-index: 999;
   margin-top: 10px;
   margin-bottom: 10px;
-  
+
   .glyphicon {
     font-size: 18px;
     line-height: 1.2
   }
 }
 
-// 
+//
 [data-section="canvas"] {
   .transition(height 200ms ease);
   .box-shadow(0 4px 8px fade(@gray-darker, 5%));
@@ -183,7 +183,7 @@ a[data-toggle="submenuback"] {
   border-bottom-right-radius: 3px;
   border-top: 40px solid darken(@body-bg, 15%);
   background-color: #fff;
-  
+
   @media (max-width: @screen-xs) {
     margin-left: 15px;
     margin-right: 15px;
@@ -216,12 +216,12 @@ a[data-toggle="submenuback"] {
     clear: both;
     margin: 0;
   }
-  
+
   .ui-draggable.ui-sortable-helper {
     .box-shadow(0 4px 15px fade(#333, 35%));
     opacity: 0.25;
   }
-  
+
   .highlight {
     position: relative;
     display: block;
@@ -230,7 +230,7 @@ a[data-toggle="submenuback"] {
     opacity: 0.75;
     background-color: fade(@body-bg, 75%);
     border: 10px solid darken(@body-bg, 3%);
-    
+
     &:before,
     &:after {
       position: absolute;
@@ -247,14 +247,14 @@ a[data-toggle="submenuback"] {
       background-color: #fff;
       border-radius: 100%;
     }
-    
+
     &:before {
       top: 50%;
       margin-top: -25px;
       content: "\f0dc";
     }
   }
-  
+
   .carousel-inner > .item img {
     width: 100%;
     max-width: 100%;
@@ -290,7 +290,7 @@ a[data-toggle="submenuback"] {
   margin-right: 15px;
   margin-bottom: 15px;
   cursor: move;
-  background-image: url("/assets/img/unsplash.jpg");
+  background-image: url("http://pongstr.github.io/rolling-into-deep/assets/img/unsplash.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -325,8 +325,8 @@ a.rmBlock {
   text-align: center;
   text-decoration: none;
   background-color: #d71e26;
-  
-  
+
+
 }
 
 #trashbin {
@@ -335,7 +335,7 @@ a.rmBlock {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: (@offcanvas-menu-zindex + 5); 
+  z-index: (@offcanvas-menu-zindex + 5);
   display: block;
   width: 72px;
   height: 100%;

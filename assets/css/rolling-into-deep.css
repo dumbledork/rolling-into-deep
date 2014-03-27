@@ -2401,8 +2401,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('/assets/fonts/bootstrap/glyphicons-halflings-regular.eot');
-  src: url('/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('http://pongstr.github.io/rolling-into-deep/assets/fonts/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('http://pongstr.github.io/rolling-into-deep/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('http://pongstr.github.io/rolling-into-deep/assets/fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('http://pongstr.github.io/rolling-into-deep/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('http://pongstr.github.io/rolling-into-deep/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6169,7 +6169,7 @@ a[data-toggle="submenuback"]:hover {
   margin-right: 15px;
   margin-bottom: 15px;
   cursor: move;
-  background-image: url("/assets/img/unsplash.jpg");
+  background-image: url("http://pongstr.github.io/rolling-into-deep/assets/img/unsplash.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -6272,7 +6272,7 @@ body {
   background-color: #ddd;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("http://pongstr.github.io/rolling-into-deep/assets/img/cover.jpg");
   background-size: cover;
 }
 .cover .cover-inner {
