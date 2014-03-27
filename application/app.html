@@ -1,0 +1,39 @@
+---
+layout: default
+title:  Generate Page
+---
+
+<div data-offcanvas="true">
+  <div id="index" class="container-fluid">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+        <input class="input-title" type="text" value="Project Name Here" placeholder="Project Name">
+        <br>
+        <p class="text-center">By <a href="#"><strong>Your Name Here</strong></a></p>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+        <div id="canvas" data-section="canvas"></div>
+      </div>
+    </div>
+
+    <div class="row" style="padding-bottom: 50px;">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+        <button class="btn btn-lg btn-default" type="button">
+          Generate HTML
+        </button>
+      </div>
+    </div>
+  </div><!-- end of .container-fluid -->
+
+  <!-- Menu -->
+  <div data-offcanvas="menu">
+  {% include menubar.html %}
+  </div><!-- end of .offcanvas-menu -->
+
+  <div id="trashbin"></div>
+
+</div><!-- end of [data-offcanvas="true"] -->

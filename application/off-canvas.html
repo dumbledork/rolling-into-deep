@@ -1,0 +1,31 @@
+---
+layout: default
+title:  Off Canvas Revision
+---
+
+<!-- 
+  `data-offcanvas` attribute is kind of like an umbrella that keeps the 
+  layout from breaking and disables scrollbars when offcanvas is active
+ -->
+<div data-off-canvas>
+
+  <div data-offcanvas="menu">
+  {% include menubar.html %}
+  </div>
+
+  <div class="container-fluid" id="index">
+
+    <button class="btn btn-default" type="button" data-toggle="off-canvas" data-target="#index">
+      <span>
+        <i class="icon-bar"></i>
+        <i class="icon-bar"></i>
+        <i class="icon-bar"></i>
+      </span>
+      <span><i class="icon-close"></i></span>
+    </button>
+
+    <div class="row">
+    
+    </div>
+  </div><!-- end of #index.container-fluid -->
+</div><!-- end of [data-offcanvas] -->

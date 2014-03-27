@@ -1,0 +1,53 @@
+    <button class="btn btn-default" type="button" data-toggle="off-canvas" data-target="#index">
+      <span>
+        <i class="icon-bar"></i>
+        <i class="icon-bar"></i>
+        <i class="icon-bar"></i>
+      </span>
+      <span><i class="icon-close"></i></span>
+    </button>
+
+    <div class="menu-inner">
+      <ul class="nav nav-pills nav-stacked">
+        <li>
+          <a data-toggle="offcanvas-drawer" href="#headers">
+            Headers <i class="glyphicon glyphicon-chevron-right pull-right"></i>
+          </a>
+        </li>
+        <li>
+          <a data-toggle="offcanvas-drawer" href="#footers">
+            Footers <i class="glyphicon glyphicon-chevron-right pull-right"></i>
+          </a>
+        </li>
+        <li>
+          <a data-toggle="offcanvas-drawer" href="#content">
+            Content <i class="glyphicon glyphicon-chevron-right pull-right"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="drawer" id="headers">
+      <a data-toggle="submenuback" href="#">
+        <i class="glyphicon glyphicon-chevron-left"></i> &nbsp; Go Back
+      </a>
+
+      <div class="draggable" data-content="{{ site.baseurl }}blocks/header/jumbotron.html"></div>
+      <div class="draggable" data-content="{{ site.baseurl }}blocks/header/navbar.html"></div>
+    </div>
+
+    <div class="drawer" id="footers">
+      <a data-toggle="submenuback" href="#">
+        <i class="glyphicon glyphicon-chevron-left"></i> &nbsp; Go Back
+      </a>
+
+      <div class="draggable" data-content="{{ site.baseurl }}blocks/footer/default-footer.html"></div>
+    </div>
+
+    <div class="drawer" id="content">
+      <a data-toggle="submenuback" href="#">
+        <i class="glyphicon glyphicon-chevron-left"></i> &nbsp; Go Back
+      </a>
+
+      <div class="draggable" data-content="{{ site.baseurl }}blocks/content/carousel.html"></div>
+    </div>

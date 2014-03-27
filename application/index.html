@@ -1,0 +1,44 @@
+---
+layout: default
+title:  Home
+---
+
+
+  <div class="cover" role="main">
+    <div class="cover-inner">
+      <div class="cover-info">
+
+        <i class="fa fa-th fa-5x"></i>
+        <h1>{{ site.title | capitalize }}</h1>
+
+        <p class="lead">
+          {{ site.tagline }}
+        </p>
+
+        <p>
+          <a class="btn btn-lg btn-primary" href="{{ site.baseurl }}app">
+            <span>Try it Out</span> <i class="glyphicon glyphicon-chevron-right"></i>
+          </a>
+        </p>
+        <small>Version 0.1.0</small>
+
+        <br><br>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+              <a href="//twitter.com/pongstr" class="twitter-follow-button" data-show-count="false">Follow @pongstr</a>
+              &nbsp;
+              <a href="//twitter.com/share" class="twitter-share-button" data-via="pongstr" data-count="none">Tweet</a>
+
+              <p><small>Copyright &copy; Pongstr. All rights reserved.</small></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
