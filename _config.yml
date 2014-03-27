@@ -12,11 +12,11 @@ permalink:        pretty
 # Server
 # ---------------------------------------------------------------------------
 
-source:           application
+source:           .
 destination:      _gh_pages
 host:             0.0.0.0
 port:             4002
-baseurl:          
+baseurl:
 url:              http://pongstr.github.io/rolling-into-deep/
 encoding:         UTF-8
 

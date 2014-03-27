@@ -25,14 +25,14 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: ['bower_components/bootstrap/dist/fonts/*'],
-            dest: 'application/assets/fonts/bootstrap/',
+            dest: 'assets/fonts/bootstrap/',
             filter: 'isFile'
           },
           { // Font-Awesome Glyphs
             expand: true,
             flatten: true,
             src: ['bower_components/font-awesome/fonts/*'],
-            dest: 'application/assets/fonts/font-awesome/',
+            dest: 'assets/fonts/font-awesome/',
             filter: 'isFile'
           }
         ]
@@ -44,8 +44,8 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: [
-              'bower_components/jquery/jquery.js', 
-              'bower_components/jquery/jquery.min.js', 
+              'bower_components/jquery/jquery.js',
+              'bower_components/jquery/jquery.min.js',
               'bower_components/jquery/jquery.min.map'
             ],
             dest: 'application/assets/js/lib/jquery/',
@@ -55,8 +55,8 @@ module.exports = function(grunt) {
             expand: true,
             flatten: true,
             src: ['bower_components/bootstrap/dist/js/*'],
-            dest: 'application/assets/js/lib/bootstrap/',
-            filter: 'isFile'            
+            dest: 'assets/js/lib/bootstrap/',
+            filter: 'isFile'
           }
         ]
       },
@@ -71,11 +71,11 @@ module.exports = function(grunt) {
             filter: 'isFile'
           },
           { // Font-awesome less stylesheets
-            expand: true, 
+            expand: true,
             flatten: true,
             src: ['bower_components/font-awesome/less/*'],
             dest: 'source/less/font-awesome',
-            filter: 'isFile'            
+            filter: 'isFile'
           }
         ]
       }
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
           sourceMap: false
         },
         files: {
-          'application/assets/css/<%= pkg.name %>.css' : 'source/less/bootstrap.less'
+          'assets/css/<%= pkg.name %>.css' : '_source/less/bootstrap.less'
         }
       },
       production: {
@@ -98,10 +98,10 @@ module.exports = function(grunt) {
           strictMath: true,
           sourceMap: false,
           compress: true
-        },        
+        },
         files: {
-          'application/assets/css/<%= pkg.name %>.min.css' : 'source/less/bootstrap.less',
-          'application/assets/css/font-awesome.min.css': 'source/less/font-awesome/font-awesome.less'
+          'assets/css/<%= pkg.name %>.min.css' : '_source/less/bootstrap.less',
+          'assets/css/font-awesome.min.css': '_source/less/font-awesome/font-awesome.less'
         }
       }
     },
@@ -110,12 +110,12 @@ module.exports = function(grunt) {
     // =====================================
     watch: {
       less: {
-        files: ['source/less/**/*.less'],
+        files: ['_source/less/**/*.less'],
         tasks: ['less:development']
       },
       jshint: {
         files: [
-          'application/assets/js/app/*.js'
+          'assets/js/app/*.js'
         ],
         tasks: ['jshint:express', 'jshint:app']
       }
@@ -133,10 +133,10 @@ module.exports = function(grunt) {
           {
             expand: true,
             src: ['*.{png,jpg,gif}'],
-            cwd: 'source/img/',
-            dest: 'application/assets/img/'
+            cwd: '_source/img/',
+            dest: 'assets/img/'
           }
-        ]          
+        ]
       }
     },
 
@@ -150,8 +150,8 @@ module.exports = function(grunt) {
         },
         files: {
           src: [
-            'dist/css/**', 
-            'dist/js/**', 
+            'dist/css/**',
+            'dist/js/**',
             'Gruntfile.js'
           ]
         }
@@ -165,10 +165,10 @@ module.exports = function(grunt) {
       },
       app: {
         options: {
-          jshintrc: 'application/assets/js/app/.jshintrc'
+          jshintrc: 'assets/js/app/.jshintrc'
         },
         src: [
-          'application/assets/js/app/app.js'
+          'assets/js/app/app.js'
         ]
       }
     }
@@ -181,8 +181,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-concat'); 
-  grunt.loadNpmTasks('grunt-contrib-uglify'); 
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 
@@ -192,7 +192,7 @@ module.exports = function(grunt) {
   // Less CSS Tasks
   grunt.registerTask('watchless', ['watch:less']);
   grunt.registerTask('buildless', ['less']);
-  
+
   // Javascript Tasks
   grunt.registerTask('lintjs', ['jshint']);
   grunt.registerTask('watchjs', ['watch:jshint']);
