@@ -2,7 +2,7 @@
 # ---------------------------------------------------------------------------
 
 markdown:         rdiscount
-pygments:         true
+highlighter:      true
 
 # Permalinks
 # ---------------------------------------------------------------------------
@@ -12,9 +12,8 @@ permalink:        pretty
 # Server
 # ---------------------------------------------------------------------------
 
-source:           .
+source:           application
 destination:      _gh_pages
-host:             0.0.0.0
 port:             4002
 baseurl:          http://pongstr.github.io/rolling-into-deep/
 url:              http://pongstr.github.io/rolling-into-deep/
